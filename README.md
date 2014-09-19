@@ -21,7 +21,9 @@ Now you're ready to go, simply edit the `less/variables.less` and `less/theme.le
 
 ## Releasing a new version
 
-Since this package is listed in the bower packages repository, to release a new version you should create a new tag in git with the new version number.  Use [semantic versioning](http://semver.org/).
+To release a new version commit your changes and create a new tag in git with the latest version number as listed in `bower.json`.  Use [semantic versioning](http://semver.org/).
+
+After release update `bower.json` with the next version number and run `grunt assemble` to update templates that use the version number.
 
 ## Copyright and license
 
