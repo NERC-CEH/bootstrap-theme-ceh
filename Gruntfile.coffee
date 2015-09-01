@@ -42,7 +42,8 @@ module.exports = (grunt) ->
       pages:
         options:
           data: './bower.json',
-          flatten: true,
+          partials: ['layouts/partials/*.mustache' ]
+          flatten: true
           assets: 'dist'
         files:
           'index.html': ['pages/index.html'],
